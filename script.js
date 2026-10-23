@@ -1,0 +1,1 @@
+const app=document.querySelector('#app');app.innerHTML='<label>Enter text</label><textarea id="text" rows="5"></textarea><button id="run">Clean text</button>';document.querySelector('#run').onclick=()=>{const v=document.querySelector('#text').value;document.querySelector('#result').textContent=v.replace(/\s+/g,' ').trim()||'Please enter some text.';};
